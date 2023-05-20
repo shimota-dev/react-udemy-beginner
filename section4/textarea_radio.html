@@ -41,7 +41,18 @@
       <form onSubmit={handleSubmit}>
       <input id="name" type="text" name="name" value={form.name} onChange={handleChange} />
       <input id="email" type="email" name="email" value={form.email} onChange={handleChange} />
-      <button>送信</button>
+      <button>送信</button><br/>
+
+      <label htmlFor="contact">テキストボックス</label>
+      <textarea id="contact" name="contact" value={form.contact} onChange={handleChange}></textarea>
+
+      <label htmlFor="gender_male">男性</label>
+      <input id="gender_male" type="radio" name="gender" value="male" onChange={handleChange} />
+      <label htmlFor="gender_female">女性</label>
+      <input id="gender_female" type="radio" name="gender" value="female" onChange={handleChange} />
+      <label htmlFor="gender_other">その他</label>
+      <input id="gender_other" type="radio" name="gender" value="other" onChange={handleChange} />
+
       </form>
       </>)
     }
